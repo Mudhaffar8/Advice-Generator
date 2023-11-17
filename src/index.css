@@ -1,0 +1,25 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+	--c-primary-one: hsl(193, 38%, 86%);
+	--c-primary-two: hsl(150, 100%, 66%);
+
+	--c-neutral-one: hsl(217, 19%, 38%);
+	--c-neutral-two: hsl(217, 19%, 24%);
+	--c-neutral-three: hsl(218, 23%, 16%);
+}
+
+@layer utilities {
+	.divider-mobile {
+		content: url("./assets/images/pattern-divider-mobile.svg");
+	}
+	.divider-desktop {
+		content: url("./assets/images/pattern-divider-desktop.svg");
+	}		
+
+	.button-shadow {
+		box-shadow: 0px 0px 14px var(--c-primary-two);
+	}
+}
