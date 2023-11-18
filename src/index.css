@@ -20,6 +20,30 @@
 	}		
 
 	.button-shadow {
-		box-shadow: 0px 0px 14px var(--c-primary-two);
+		box-shadow: 0px 0px 24px var(--c-primary-two);
+	}
+
+	@keyframes spin {
+		from {transform: rotate(0deg)}
+		to {transform: rotate(360deg)}
+	}
+
+	@keyframes fade-in {
+		from {
+			opacity: 0%;
+			transform: translateY(-0.45em);
+		}
+		to {
+			opacity: 100%;
+			transform: translateY(0);
+		}
+	}
+
+	.fadeIn {
+		animation: fade-in 0.5s ease-in-out;
+	}
+
+	.spin {
+		animation: spin 0.4s ease-out;
 	}
 }
